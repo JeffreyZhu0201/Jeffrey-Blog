@@ -140,7 +140,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://www.jeffreyzhu.me/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-12-16T09:52:06.000Z">
-<meta property="article:modified_time" content="2025-12-16T10:01:22.829Z">
+<meta property="article:modified_time" content="2025-12-16T10:04:32.740Z">
 <meta property="article:author" content="Jeffrey Zhu">
 <meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary">
@@ -712,8 +712,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-12-16 18:01:22</span>
-            <span class="mobile">2025-12-16 18:01:22</span>
+            <span class="desktop">2025-12-16 18:04:32</span>
+            <span class="mobile">2025-12-16 18:04:32</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -735,12 +735,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>406 Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>317 Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 Mins</span>
         </span>
     
     
@@ -759,14 +759,14 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h2 id="宿主机配置"><a href="#宿主机配置" class="headerlink" title="宿主机配置"></a>宿主机配置</h2><p>![Screenshot 2025-12-16 at 17.47.00](&#x2F;Users&#x2F;zhuzy2024&#x2F;Documents&#x2F;Workspace&#x2F;Jeffrey_Blog&#x2F;source&#x2F;_posts&#x2F;images&#x2F;Screenshot 2025-12-16 at 17.47.00.png)</p>
-<h2 id="从华为opengauss官网下载镜像文件"><a href="#从华为opengauss官网下载镜像文件" class="headerlink" title="从华为opengauss官网下载镜像文件"></a>从<a class="link"   target="_blank" rel="noopener" href="https://download-opengauss.osinfra.cn/archive_test/7.0.0-RC1/openGauss7.0.0-RC1.B023/CentOS7/x86/" >华为opengauss官网<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下载镜像文件</h2><p>![Screenshot 2025-12-16 at 17.54.31](&#x2F;Users&#x2F;zhuzy2024&#x2F;Documents&#x2F;Workspace&#x2F;Jeffrey_Blog&#x2F;source&#x2F;_posts&#x2F;images&#x2F;Screenshot 2025-12-16 at 17.54.31.png)</p>
+			<h2 id="宿主机配置"><a href="#宿主机配置" class="headerlink" title="宿主机配置"></a>宿主机配置</h2><p>![Screenshot 2025-12-16 at 17.47.00](&#x2F;images&#x2F;Screenshot 2025-12-16 at 17.47.00.png)</p>
+<h2 id="从华为opengauss官网下载镜像文件"><a href="#从华为opengauss官网下载镜像文件" class="headerlink" title="从华为opengauss官网下载镜像文件"></a>从<a class="link"   target="_blank" rel="noopener" href="https://download-opengauss.osinfra.cn/archive_test/7.0.0-RC1/openGauss7.0.0-RC1.B023/CentOS7/x86/" >华为opengauss官网<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下载镜像文件</h2><p>![Screenshot 2025-12-16 at 17.54.31](images&#x2F;Screenshot 2025-12-16 at 17.54.31.png)</p>
 <div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://download-opengauss.osinfra.cn/archive_test/7.0.0-RC1/openGauss7.0.0-RC1.B023/openEuler20.03/x86/openGauss-Docker-7.0.0-RC1-x86_64.tar</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="下载完成后"><a href="#下载完成后" class="headerlink" title="下载完成后"></a>下载完成后</h2><p>![Screenshot 2025-12-16 at 17.47.56](&#x2F;Users&#x2F;zhuzy2024&#x2F;Documents&#x2F;Workspace&#x2F;Jeffrey_Blog&#x2F;source&#x2F;_posts&#x2F;images&#x2F;Screenshot 2025-12-16 at 17.47.56.png)</p>
+<h2 id="下载完成后"><a href="#下载完成后" class="headerlink" title="下载完成后"></a>下载完成后</h2><p>![Screenshot 2025-12-16 at 17.47.56](images&#x2F;Screenshot 2025-12-16 at 17.47.56.png)</p>
 <h2 id="加载镜像"><a href="#加载镜像" class="headerlink" title="加载镜像"></a>加载镜像</h2><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker load -i openGauss-Docker-7.0.0-RC1-x86_64.tar</span><br><span class="line">docker images</span><br></pre></td></tr></table></figure></div>
 
-<p>![Screenshot 2025-12-16 at 17.48.07](&#x2F;Users&#x2F;zhuzy2024&#x2F;Documents&#x2F;Workspace&#x2F;Jeffrey_Blog&#x2F;source&#x2F;_posts&#x2F;images&#x2F;Screenshot 2025-12-16 at 17.48.07.png)</p>
+<p>![Screenshot 2025-12-16 at 17.48.07](images&#x2F;Screenshot 2025-12-16 at 17.48.07.png)</p>
 <h2 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h2><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker run --name opengauss --privileged=<span class="literal">true</span> -d \</span><br><span class="line">  -e GS_PASSWORD=Gaussdb@123 \</span><br><span class="line">  -p 8888:5432 \</span><br><span class="line">  opengauss:7.0.0-rc1</span><br></pre></td></tr></table></figure></div>
 
 <ul>
@@ -778,10 +778,10 @@
 </ul>
 <h2 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h2><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure></div>
 
-<p>![Screenshot 2025-12-16 at 17.48.33](&#x2F;Users&#x2F;zhuzy2024&#x2F;Documents&#x2F;Workspace&#x2F;Jeffrey_Blog&#x2F;source&#x2F;_posts&#x2F;images&#x2F;Screenshot 2025-12-16 at 17.48.33.png)</p>
+<p>![Screenshot 2025-12-16 at 17.48.33](images&#x2F;Screenshot 2025-12-16 at 17.48.33.png)</p>
 <h2 id="进入容器并连接数据库"><a href="#进入容器并连接数据库" class="headerlink" title="进入容器并连接数据库"></a>进入容器并连接数据库</h2><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it &lt;CONTAINER_ID&gt; bash</span><br><span class="line">docker <span class="built_in">exec</span> -it 67c999de42fa bash </span><br><span class="line">su omm</span><br><span class="line">gsql -d postgres -p 5432</span><br></pre></td></tr></table></figure></div>
 
-<p>![Screenshot 2025-12-16 at 17.49.05](&#x2F;Users&#x2F;zhuzy2024&#x2F;Documents&#x2F;Workspace&#x2F;Jeffrey_Blog&#x2F;source&#x2F;_posts&#x2F;images&#x2F;Screenshot 2025-12-16 at 17.49.05.png)</p>
+<p>![Screenshot 2025-12-16 at 17.49.05](images&#x2F;Screenshot 2025-12-16 at 17.49.05.png)</p>
 <h2 id="从宿主机连接，需要gsql客户端"><a href="#从宿主机连接，需要gsql客户端" class="headerlink" title="从宿主机连接，需要gsql客户端"></a>从宿主机连接，需要gsql客户端</h2><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gsql -d postgres -U gaussdb -W Gaussdb@123 -h 127.0.0.1 -p 8888</span><br></pre></td></tr></table></figure></div>
 
 
@@ -798,7 +798,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2025-12-16 18:01:22
+                    :</strong> 2025-12-16 18:04:32
             </li>
         
         <li>
@@ -933,7 +933,7 @@
                     </span>
                     
                         <span>
-                            509 words in total
+                            420 words in total
                         </span>
                     
                 </p>
